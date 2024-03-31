@@ -1,17 +1,19 @@
 
-[![Build status](https://ci.appveyor.com/api/projects/status/1bcfm6u6df00wcjm?svg=true)](https://ci.appveyor.com/project/Mariza0/react-hw5-composition-cards)
+[![Build status](https://ci.appveyor.com/api/projects/status/1bcfm6u6df00wcjm?svg=true)](https://ci.appveyor.com/project/Mariza0/react-hw5-composition-decomposition.git)
 
-[ссылка на тестовый проект](https://mariza0.github.io/react-hw5-composition-cards/) 
+[ссылка на тестовый проект](https://mariza0.github.io/react-hw5-composition-decomposition/) 
 
-[ссылка на задание](https://github.com/netology-code/ra16-homeworks/tree/ra-51/composition/cards)
+[ссылка на задание](https://github.com/netology-code/ra16-homeworks/tree/ra-51/composition/decomposition)
 
-## Карточки
-Вам необходимо реализовать компонент карточек, позволяющий использовать себя следующим образом:
+## Декомпозиция
+Вы работаете в стартапе, который решил тягаться с самим Яндексом в части предоставления контента. Это, конечно же, шутка, но задача нешуточная.
 
-![](/src/img/card1.png)
+Вам принесли дизайн-макет, похожий на этот:
 
-![](/src/img/card2.png)
+![](/src/img/ya-page.png)
 
-В качестве CSS вы можете использовать Bootstrap, а подглядеть генерируемую разметку можете на странице.
+Что вам нужно сделать:
 
-Подсказка: используйте для этого props.children и props для отображения картинки.
+Разбейте весь интерфейс на компоненты и в файле каждого компонента напишите буквально одну строку комментария, за что данный компонент отвечает. Можете использовать формат JSDoc, детали про него можно посмотреть по [ссылке](https://medium.com/@antonkrinitsyn/jsdoc-react-5e6c530880a0). Также рекомендуем статью на тему JSDoc.
+Постарайтесь повторяющиеся компоненты сделать настраемыми за счёт props. Допустим, у каждой новости в списке новостей: иконка, текст и ссылка.
+Функциональность и стилизацию реализовывать не нужно, достаточно базового оформления, чтобы видно было все блоки.
