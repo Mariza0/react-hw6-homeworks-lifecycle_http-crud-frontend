@@ -1,4 +1,5 @@
 import "./App.css"
+import "./index.css"
 import imageAdv from "./img/card.png"
 import riaImg from "./img/ria.png"
 import rbkImg from "./img/rbc.png"
