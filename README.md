@@ -1,19 +1,37 @@
 
-[![Build status](https://ci.appveyor.com/api/projects/status/1bcfm6u6df00wcjm?svg=true)](https://ci.appveyor.com/project/Mariza0/react-hw5-composition-decomposition.git)
+[![Build status](https://ci.appveyor.com/api/projects/status/0f9dcbl84x2mnvwc?svg=true)](https://ci.appveyor.com/project/Mariza0/react-hw6-homeworks-lifecycle-http-crud-frontend)
 
-[ссылка на тестовый проект](https://mariza0.github.io/react-hw5-composition-decomposition/) 
+[ссылка на тестовый проект](https://mariza0.github.io/react-hw6-homeworks-lifecycle-http-crud-frontend/) 
 
-[ссылка на задание](https://github.com/netology-code/ra16-homeworks/tree/ra-51/composition/decomposition)
+[сслыка на задание](https://github.com/netology-code/ra16-homeworks/tree/ra-51/lifecycle-http/crud)
 
-## Декомпозиция
-Вы работаете в стартапе, который решил тягаться с самим Яндексом в части предоставления контента. Это, конечно же, шутка, но задача нешуточная.
 
-Вам принесли дизайн-макет, похожий на этот:
+## CRUD
+Вам необходимо реализовать базовый CRUD без обновления при работе с HTTP.
 
-![](/src/img/ya-page.png)
+Backend вы можете либо написать сами, либо взять готовый из каталога backend.
 
-Что вам нужно сделать:
+![](/src//img/crud.png)
+### Общая механика
+Первоначальная загрузка: делается http-запрос GET на адрес http://localhost:7070/notes, полученные данные отображаются в виде карточек с возможностью удаления.
 
-Разбейте весь интерфейс на компоненты и в файле каждого компонента напишите буквально одну строку комментария, за что данный компонент отвечает. Можете использовать формат JSDoc, детали про него можно посмотреть по [ссылке](https://medium.com/@antonkrinitsyn/jsdoc-react-5e6c530880a0). Также рекомендуем статью на тему JSDoc.
-Постарайтесь повторяющиеся компоненты сделать настраемыми за счёт props. Допустим, у каждой новости в списке новостей: иконка, текст и ссылка.
-Функциональность и стилизацию реализовывать не нужно, достаточно базового оформления, чтобы видно было все блоки.
+### Добавление:
+
+Вы заполняете форму и нажимаете кнопку «Добавить».
+Выполняется http-запрос POST на адрес http://localhost:7070/notes, в теле запроса передаётся следующий JSON:
+```
+{
+    "id": 0,
+    "content": "То, что было введено в поле ввода"
+}
+```
+После чего делается запрос на получение всех записей и происходит обновление списка — GET http://localhost:7070/notes.
+Удаление:
+
+Вы нажимаете на крестик на одной из карточек.
+Выполняется http-запрос DELETE на адрес http://localhost:7070/notes/{id}, где id — это идентификатор заметки.
+После чего делается запрос на получение всех записей и происходит обновление списка — GET http://localhost:7070/notes.
+Обновление:
+
+Вы нажимаете на кнопку «Обновить» — две зелёные стрелочки.
+После чего делается запрос на получение всех записей и происходит обновление списка — GET http://localhost:7070/notes.
