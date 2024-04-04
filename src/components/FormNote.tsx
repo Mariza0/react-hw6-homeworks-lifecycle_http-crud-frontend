@@ -6,7 +6,7 @@ type Item = {
 
 export const FormNote: React.FC<Item> = ({url}) => {
     
-    const [ error ,setError] = useState<string | null>(null);
+    const [ ,setError] = useState<string | null>(null);
     const [form, setForm] = useState({ newNote: "" });
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
