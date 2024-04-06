@@ -1,7 +1,7 @@
 
-[![Build status](https://ci.appveyor.com/api/projects/status/0f9dcbl84x2mnvwc?svg=true)](https://ci.appveyor.com/project/Mariza0/react-hw6-homeworks-lifecycle-http-crud-frontend)
+[![Build status](https://ci.appveyor.com/api/projects/status/0f9dcbl84x2mnvwc?svg=true)](https://ci.appveyor.com/project/Mariza0/react-hw6-lifecycle-crud-frontend)
 
-[ссылка на тестовый проект](https://mariza0.github.io/react-hw6-homeworks-lifecycle-http-crud-frontend/) 
+[ссылка на тестовый проект](https://mariza0.github.io/react-hw6-lifecycle-crud-frontend/) 
 
 [сслыка на задание](https://github.com/netology-code/ra16-homeworks/tree/ra-51/lifecycle-http/crud)
 
